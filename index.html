@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="heading">Currency Converter</div>
+
+        <div class="input">
+          <label for="num">Enter a Number :</label><br />
+          <input type="number" name="num" id="num" min="1" value="1" />
+        </div>
+        <div class="dropdown">
+          <span id="fr">From</span>
+          <div class="from">
+            <img src="https://flagsapi.com/US/flat/64.png" />
+
+            <select name="from"></select>
+          </div>
+
+          <i class="fa fa-exchange" aria-hidden="true" id="interChange"></i>
+
+          <span id="to">To</span>
+          <div class="to">
+            <img src="https://flagsapi.com/IN/flat/64.png" />
+
+            <select name="to"></select>
+          </div>
+        </div>
+        <div class="msg">
+          <p>1 USD = 94.21445002 INR</p>
+        </div>
+        <!-- you can add button -->
+        <!-- <input type="submit" value="Get Amount" id="btn"/> -->
+      </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
